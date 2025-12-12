@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e; /* Deep space blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+#game-container {
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 2px solid #333;
+}
+
+canvas {
+    background-color: #000;
+    display: block;
+}
+
+#ui {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.hidden {
+    display: none;
+}
